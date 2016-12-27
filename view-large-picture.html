@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>图片详情</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="share()">
+        <ion-icon name="share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="view-large-picture-page">
+  <ion-slides #slides [options]="imageSlideOptions">
+    <ion-slide *ngFor="let image of images">
+      <img [src]=image />
+    </ion-slide>
+  </ion-slides>
+</ion-content>

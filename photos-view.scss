@@ -1,0 +1,33 @@
+.imgContainer {
+  .oneImgContainer {
+    margin-top: 10px;
+
+    button {
+      padding: 0;
+    }
+  }
+
+  .fourImgContainer {
+    width: 150px;
+    margin-top: 5px;
+  }
+
+  .manyImgContainer {
+    width: 225px;
+    margin-top: 5px;
+  }
+
+  .manyBtn {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

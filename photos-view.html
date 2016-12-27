@@ -1,0 +1,24 @@
+<div class="imgContainer" *ngIf="images.length>0">
+  <!--一张图片-->
+  <div class="oneImgContainer" *ngIf="images.length===1">
+    <button (click)="goToViewLargePictureCtrl($event, images)">
+      <img [src]=images[0].big>
+    </button>
+  </div>
+
+  <!--四张图片-->
+  <div class="fourImgContainer" *ngIf="images.length===4">
+    <button class="manyBtn" *ngFor="let image of images" (click)="goToViewLargePictureCtrl($event, images)">
+      <img [src]=image.big>
+    </button>
+    <div class="clearFloat"></div>
+  </div>
+
+  <!--多张图片-->
+  <div class="manyImgContainer" *ngIf="images.length!==1 && images.length!==4">
+    <button class="manyBtn" *ngFor="let image of images" (click)="goToViewLargePictureCtrl($event, images)">
+      <img [src]=image.big>
+    </button>
+    <div class="clearFloat"></div>
+  </div>
+</div>
