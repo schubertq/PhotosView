@@ -16,5 +16,5 @@ Ionic2 九宫格图片展示和查看大图component
 <img src="https://github.com/schubertq/PhotosView/raw/master/screenshots/p5.png" width = "30%" />
 
 * 使用方法:
-    * <!--这里直接给一个数组images作为输入,然后将该模板嵌入到你的html文件中-->
-    * <photos-view [images]="images"></photos-view>
+    * &lt;!--这里直接给一个数组images作为输入,然后将该模板嵌入到你的html文件中--&gt;
+    * &lt;photos-view [images]="images"&gt;&lt;/photos-view&gt;
