@@ -9,7 +9,7 @@ import {ViewLargePictureCtrl} from "./view-large-picture";
 })
 export class PhotosViewCtrl {
   @Input() images: Array<any>;
-
+  //A
   constructor(private navCtrl:NavController) {
 
   }
